@@ -4,64 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fantasummer 2025</title>
+  <!-- Font Pennello -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --rosa-pastello: #ffd6e0;
-      --rosa-chiaro: #ffeff7;
-      --rosa-scuro: #c76c96;
-      --rosa-media: #d66ba0;
-      --bianco-rosato: #fffafc;
-    }
     body {
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-color: var(--bianco-rosato);
-      background-image: url('https://www.transparenttextures.com/patterns/cream-dust.png');
+      background-color: #fffafc;
       color: #333;
       margin: 0;
       padding: 0;
       line-height: 1.6;
     }
     header {
-      background-color: var(--rosa-pastello);
+      background-color: #ffd6e0;
       text-align: center;
-      padding: 40px 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px 20px;
     }
     header h1 {
       font-family: 'Pacifico', cursive;
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0;
-      color: var(--rosa-scuro);
     }
     header p {
-      font-size: 1.2rem;
-      margin-top: 15px;
-      color: var(--rosa-media);
+      font-size: 1.1rem;
+      margin-top: 10px;
     }
     nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      background-color: var(--rosa-chiaro);
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      background-color: #ffeff7;
+      padding: 10px;
     }
     nav a {
       text-decoration: none;
-      color: var(--rosa-media);
+      color: #d66ba0;
       font-weight: bold;
       font-size: 1rem;
-      padding: 8px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    nav a:hover {
-      background-color: var(--rosa-pastello);
     }
     section {
-      padding: 40px 5vw;
+      padding: 30px 5vw;
       max-width: 800px;
       margin: auto;
     }
@@ -69,49 +52,39 @@
       padding-left: 20px;
     }
     h2 {
-      color: var(--rosa-scuro);
-      font-size: 2rem;
-      border-bottom: 2px solid var(--rosa-pastello);
-      padding-bottom: 10px;
+      color: #c76c96;
+      font-size: 1.8rem;
     }
     h3 {
-      color: var(--rosa-scuro);
-      font-size: 1.4rem;
-      margin-top: 25px;
+      color: #c76c96;
+      font-size: 1.3rem;
+      margin-top: 20px;
     }
-    .iframe-wrapper {
-      overflow: hidden;
-      width: 100%;
-      height: 350px;
-      position: relative;
-    }
-    .iframe-wrapper iframe {
+    iframe {
       border: none;
       width: 100%;
-      height: 100%;
+      height: 500px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-top: 20px;
     }
     .button-container {
       text-align: center;
-      margin: 40px 0;
+      margin: 30px 0;
     }
     .button-container a {
-      background-color: var(--rosa-pastello);
-      color: var(--rosa-scuro);
-      padding: 14px 28px;
+      background-color: #ffd6e0;
+      color: #c76c96;
+      padding: 12px 24px;
       text-decoration: none;
-      border-radius: 12px;
+      border-radius: 8px;
       font-weight: bold;
-      font-size: 1.1rem;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-      transition: background-color 0.3s, transform 0.2s;
-    }
-    .button-container a:hover {
-      background-color: var(--rosa-chiaro);
-      transform: scale(1.05);
+      font-size: 1rem;
+      display: inline-block;
     }
     @media (max-width: 600px) {
       header h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
       nav a {
         font-size: 0.95rem;
@@ -119,8 +92,8 @@
       section {
         padding: 20px 5vw;
       }
-      .iframe-wrapper {
-        height: 300px;
+      iframe {
+        height: 400px;
       }
     }
   </style>
@@ -138,14 +111,14 @@
     <h2>🎯 Regole del Gioco</h2>
     <h3>+5 punti</h3>
     <ul>
-      <li>Lasciare numero / insta a qualcuno</li>
-      <li>Chiedere numero / insta a qualcuno</li>
+      <li>Lasciare numero / Insta a qualcuno</li>
+      <li>Chiedere numero / Insta a qualcuno</li>
       <li>"Rubare" maglie o felpe</li>
       <li>Drink offerto (non da amiche)</li>
       <li>Foto con sconosciuti</li>
       <li>Pigiama party</li>
       <li>Outfit matchato</li>
-      <li>MC / Pastaro post serata</li>
+      <li>Mc / Pastaro post serata</li>
       <li>Ricevere fiori</li>
       <li>Vedere una stella cadente</li>
       <li>Prendere la macchina in serata</li>
@@ -153,8 +126,8 @@
     <h3>+10 punti</h3>
     <ul>
       <li>Fare after</li>
-      <li>Bagno in mare / piscina vestiti</li>
-      <li>Bagno in mare / piscina di notte</li>
+      <li>Bagno in mare/piscina vestiti</li>
+      <li>Bagno in mare/piscina di notte</li>
       <li>Body shot</li>
       <li>Bacio in testa ad un pelato (pelato!!)</li>
       <li>Festa a tema</li>
@@ -184,13 +157,13 @@
     </ul>
     <h3>Malus</h3>
     <ul>
-      <li>-10: Black out drunk</li>
-      <li>-10: Piangere per qualcuno</li>
-      <li>-15: Scappare dalle amiche ubriaca</li>
-      <li>-20: Contattare l'ex</li>
-      <li>-20: Scomparire senza preavviso in serata</li>
-      <li>-20: Paccare una serata all'ultimo (no salute)</li>
-      <li>-50: Fare cose con l'ex (sì, anche rivedersi)</li>
+      <li>-10 punti: Black out drunk</li>
+      <li>-10 punti: Piangere per qualcuno</li>
+      <li>-15 punti: Scappare dalle amiche ubriaca</li>
+      <li>-20 punti: Contattare l'ex</li>
+      <li>-20 punti: Scomparire senza preavviso in serata</li>
+      <li>-20 punti: Peccare una serata all'ultimo (no salute)</li>
+      <li>-50 punti: Fare cose con l'ex (anche solo rivedersi)</li>
     </ul>
     <h3>Bonus</h3>
     <p>1 bonus per richiedere la propria roba o contattare l'ex per eventi programmati precedentemente</p>
@@ -201,9 +174,7 @@
   <section id="classifica">
     <h2>🏆 Classifica</h2>
     <p>Classifica aggiornata in tempo reale:</p>
-    <div class="iframe-wrapper">
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQfjxsDxkYYZ34Ke3tLPViyebvKGGrlFHcnSA8X8je0dyEEhRUf93RmlJ4WCGriJnkscLgWt20hHcp0/pubhtml?gid=1457309632&single=true"></iframe>
-    </div>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQfjxsDxkYYZ34Ke3tLPViyebvKGGrlFHcnSA8X8je0dyEEhRUf93RmlJ4WCGriJnkscLgWt20hHcp0/pubhtml?gid=1457309632&single=true"></iframe>
   </section>
 </body>
 </html>
