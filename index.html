@@ -100,6 +100,56 @@
         height: 400px;
       }
     }
+    /* Stile generale */
+.sezione {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Tabelle responsive */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none; /* Nascondi intestazioni classiche */
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+    
   </style>
 </head>
 <body>
@@ -113,74 +163,129 @@
     <a href="#classifica">Classifica</a>
   </nav>
 
-  <section id="regole">
-    <h2>🎯 Regole del Gioco</h2>
+ <section id="punti" class="sezione">
+  <h2>✨ FANTASUMMER 2025 – Regolamento</h2>
 
-    <h3>+5 punti</h3>
-    <ul>
-      <li>Lasciare numero / insta a qualcuno</li>
-      <li>Chiedere numero / insta a qualcuno</li>
-      <li>"Rubare" maglie o felpe</li>
-      <li>Drink offerto (non da amiche)</li>
-      <li>Foto con sconosciuti</li>
-      <li>Pigiama party</li>
-      <li>Outfit matchato</li>
-      <li>Mc / pastaro post serata</li>
-      <li>Ricevere fiori</li>
-      <li>Vedere una stella cadente</li>
-      <li>Prendere la macchina in serata</li>
-    </ul>
+  <h3 style="color:#d9534f">+5 punti</h3>
+  <ul>
+    <li>Lasciare/chiedere il numero o IG a qualcuno</li>
+    <li>“Rubare” maglie o felpe</li>
+    <li>Drink offerto (non da amiche)</li>
+    <li>Foto con sconosciuti</li>
+    <li>Pigiama party</li>
+    <li>Mc/pastaro post serata (vale anche se non si consuma)</li>
+    <li>II e III appuntamento con la stessa persona</li>
+    <li>Ha 2 anni in meno</li>
+    <li>Ha 7 anni in più</li>
+  </ul>
 
-    <h3>+10 punti</h3>
-    <ul>
-      <li>Fare after</li>
-      <li>Bagno in mare / piscina vestiti</li>
-      <li>Bagno in mare / piscina di notte</li>
-      <li>Body shot</li>
-      <li>Bacio in testa ad un pelato</li>
-      <li>Festa a tema</li>
-      <li>Foto con due che si baciano dietro</li>
-      <li>Baciarsi sotto la pioggia (uno per persona)</li>
-      <li>Fare un gioco alcolico</li>
-      <li>Cantare al karaoke</li>
-    </ul>
+  <h3 style="color:#f0ad4e">+10 punti</h3>
+  <ul>
+    <li>Comprare sex toys</li>
+    <li>Tag nelle storie di sconosciuti</li>
+    <li>È uno straniero in vacanza (non vive in Italia)</li>
+    <li>Fare after</li>
+    <li>Bagno/piscina vestiti</li>
+    <li>Bagno/piscina di notte</li>
+    <li>Body shot</li>
+    <li>Bacio in testa a un pelato</li>
+    <li>Festa a tema</li>
+    <li>Foto con 2 che si baciano dietro</li>
+    <li>Karaoke/gioco alcolico</li>
+    <li>Ha +7 anni in più</li>
+  </ul>
 
-    <h3>+15 punti</h3>
-    <ul>
-      <li>Dormire all'aperto</li>
-      <li>Serata intera senza telefono</li>
-      <li>Bacio (1 volta per persona)</li>
-      <li>Fare chiusura in disco</li>
-      <li>Convincere uno sconosciuto del fatto di conoscersi</li>
-    </ul>
+  <h3 style="color:#f7c948">+15 punti</h3>
+  <ul>
+    <li>Prendere la macchina in serata</li>
+    <li>Ricevere fiori/regali (non compleanni o eventi)</li>
+    <li>Dormire all’aperto</li>
+    <li>Serata intera senza telefono</li>
+    <li>Fare chiusura in disco</li>
+    <li>Bacio (1 volta per persona)</li>
+    <li>Convincere uno sconosciuto del fatto di conoscersi</li>
+  </ul>
 
-    <h3>+20 punti</h3>
-    <ul>
-      <li>Piercing (no buchi orecchie) / tatuaggio</li>
-      <li>Tinta capelli non naturale</li>
-      <li>Andare in serata in pigiama</li>
-    </ul>
+  <h3 style="color:#a8e6cf">+20 punti</h3>
+  <ul>
+    <li>Appuntamento con qualcuno</li>
+    <li>Impezzare il DJ (non vale se lo scopri dopo)</li>
+    <li>Piercing (no orecchie) / tatuaggio</li>
+    <li>Tinta capelli strana (non naturale)</li>
+    <li>Andare in serata in pigiama</li>
+  </ul>
 
-    <h3>+50 punti</h3>
-    <ul>
-      <li>Arresto</li>
-      <li>Foto con personaggio famoso</li>
-    </ul>
+  <h3 style="color:#b3e5fc">+50 punti</h3>
+  <ul>
+    <li>Arresto</li>
+    <li>Foto con personaggio famoso</li>
+  </ul>
 
-    <h3>Malus</h3>
-    <ul>
-      <li>-10 punti: blackout drunk</li>
-      <li>-10 punti: piangere per qualcuno</li>
-      <li>-15 punti: scappare dalle amiche ubriaca</li>
-      <li>-20 punti: contattare l'ex</li>
-      <li>-20 punti: scomparire senza preavviso in serata</li>
-      <li>-20 punti: peccare una serata all’ultimo (no salute)</li>
-      <li>-50 punti: fare cose con l’ex (anche rivedersi)</li>
-    </ul>
+  <h3 style="color:#d4a0f3">+75 punti</h3>
+  <ul>
+    <li>Trombare / preliminari</li>
+  </ul>
 
-    <h3>Bonus</h3>
-    <p>🎁 1 bonus per richiedere la propria roba o contattare l'ex per eventi già programmati.</p>
-  </section>
+  <h3 style="color:#f06292">+100 punti</h3>
+  <ul>
+    <li>Lasciarsi (anche nel caso di frequentazioni pesè)</li>
+  </ul>
+
+  <h3>😈 MALUS</h3>
+  <ul>
+    <li>Appuntamento andato male (−5)</li>
+    <li>Non offre al primo appuntamento (−10)</li>
+    <li>Blackout drunk (−10)</li>
+    <li>Piangere per qualcuno (−10)</li>
+    <li>Chi ci prova ha il nome di uno dei due ex dichiarati (−15)</li>
+    <li>Scappare dalle amiche ubriaca (−15)</li>
+    <li>Contattare l’ex (−20)</li>
+    <li>Sparire senza preavviso in serata (−20)</li>
+    <li>Paccare una serata all’ultimo – no salute (−20)</li>
+    <li>Fare cose con l’ex (anche rivedersi) (−50)</li>
+    <li>Fidanzarsi (−100)</li>
+  </ul>
+
+  <h3>🎁 BONUS</h3>
+  <ul>
+    <li>Raddoppio punti se tutte presenti all’uscita (chi fa zero, 5 punti standard)</li>
+    <li>Richiedere la propria roba all’ex o contattarlo per eventi già programmati</li>
+  </ul>
+
+  <h3>🧍‍♀️ BONUS E MALUS NOMINALI (+15 / -15)</h3>
+  <table border="1" style="border-collapse: collapse;">
+    <thead>
+      <tr><th>Nome</th><th>Bonus</th><th>Malus</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Azzù</td><td>Ha gli occhi azzurri</td><td>È napoletano</td></tr>
+      <tr><td>Jenny</td><td>È più basso di te in quel momento</td><td>Ha la Mercedes</td></tr>
+      <tr><td>Rebby</td><td>È rosso</td><td>È un ingegnere</td></tr>
+      <tr><td>Veky</td><td>Balla/ha ballato la bachata</td><td>Ha un border collie</td></tr>
+      <tr><td>Chiara</td><td>Shottino di sambuca</td><td>Fare ritardo over 15 min</td></tr>
+      <tr><td>Eli</td><td>Shottino di Tequila</td><td>Fa il giardiniere</td></tr>
+      <tr><td>Paglia</td><td>Ti prepara un pasto</td><td>È reggiano</td></tr>
+      <tr><td>Bobo</td><td>Ha una casa con piscina</td><td>Parla dell’ex</td></tr>
+    </tbody>
+  </table>
+
+  <h3>📋 Lista di Persone</h3>
+  <table border="1" style="border-collapse: collapse;">
+    <thead>
+      <tr><th>Nome</th><th>Ex dichiarati</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Azzù</td><td>Davide, Etienne (o Stefano)</td></tr>
+      <tr><td>Jenny</td><td>Riccardo, Tommaso</td></tr>
+      <tr><td>Rebby</td><td>Martino, Ignazio</td></tr>
+      <tr><td>Veky</td><td>Nico (&Co), Diego</td></tr>
+      <tr><td>Chiara</td><td>Federico, Davide</td></tr>
+      <tr><td>Eli</td><td>Alessandro, Emanuele</td></tr>
+      <tr><td>Paglia</td><td>Andrea, Emanuele (&Co)</td></tr>
+      <tr><td>Bobo</td><td>Andrea, Marco</td></tr>
+    </tbody>
+  </table>
+</section>
 
   <section class="button-container">
     <a href="https://docs.google.com/spreadsheets/d/1Acg1tm-2DfuTrKUVNC_3XCONSS84Src4KI8Muv5VlEA/edit?usp=sharing" target="_blank">➕ Inserisci i tuoi punti</a>
